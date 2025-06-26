@@ -1,0 +1,104 @@
+//// INTERACTIONSYSTEM.CPP
+
+
+if (current) {
+
+        QString base64Image = QString::fromStdString(current->getProfileImageBase64());
+        if (base64Image.isEmpty()) {
+            qDebug() << "No base64 image available.";
+        } else {
+
+            QString imageStyle = QString(
+                                     "border-image: url(data:image/png;base64,%1) 0 0 0 0 stretch stretch;"
+                                     ).arg(base64Image);
+
+            ui->profile->setStyleSheet(imageStyle);
+        }
+
+
+        ui->userinfo_label->setText(QString::fromStdString(current->get_userName()));
+    } else {
+        qDebug() << "User pointer (current) is null!";
+    }
+ 
+
+
+
+/////// USERINTERFACE.CPP
+
+
+
+void userinterface::on_pushButton_3_clicked()
+{
+    // 1) open file dialog
+    QString path = QFileDialog::getOpenFileName(
+        this,
+        "Select Profile Image",
+        "",
+        "Images (*.png *.jpg *.jpeg *.bmp);;All Files (*)"
+        );
+
+    if (path.isEmpty()) {
+        // user cancelled
+        return;
+    }
+
+    // 2) read the image file and convert it to Base64
+    QFile file(path);
+    if (!file.open(QIODevice::ReadOnly)) {
+        QMessageBox::warning(this, "Error", "Failed to open image file.");
+        return;
+    }
+
+    QByteArray imageData = file.readAll();
+    file.close();
+
+    // Convert the image data to Base64
+    QString base64Image = QString(imageData.toBase64());
+
+    // 3) preview it
+    QPixmap pix;
+    pix.loadFromData(QByteArray::fromBase64(base64Image.toUtf8()));
+    if (!pix.isNull()) {
+        ui->image_label->setPixmap(
+            pix.scaled(ui->image_label->size(),
+                       Qt::KeepAspectRatio,
+                       Qt::SmoothTransformation)
+            );
+    } else {
+        QMessageBox::warning(this, "Error", "Failed to load image preview.");
+        return;
+    }
+
+    // 4) store it for later (in Base64 format)
+    tempImagePath = base64Image;
+}
+
+
+
+
+
+//// USERINTERFACE.CPP  ----> REGISTER
+
+
+  /*QFile file(tempImagePath);
+    if (!file.open(QIODevice::ReadOnly)) {
+        QMessageBox::critical(this, "Error", "Failed to open image file.");
+        return;
+    }
+
+    QByteArray imageData = file.readAll();
+    file.close();
+    QString base64Image = QString(imageData.toBase64());*/
+
+     u->setProfileImageBase64(tempImagePath.toStdString());
+
+
+
+
+
+
+
+
+
+
