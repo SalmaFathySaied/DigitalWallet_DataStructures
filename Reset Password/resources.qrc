@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>sound/test_no_cover.mp3</file>
+    </qresource>
+</RCC>
