@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Admin</class>
+ <widget class="QWidget" name="Admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="Admin_stackWidget">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-10</y>
+     <width>1541</width>
+     <height>911</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="AdduserPage">
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>40</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>210</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>fe ehhh</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="ll">
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>30</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lOGIN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>User Name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>170</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Password</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="adminUserName_line">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>80</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AdminPass_line">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>160</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>250</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>login</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="AminMEnuPage">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>296</width>
+       <height>701</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>Add User</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>Delete User</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>Edit User</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>view All users</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>view all transactions</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>Set Fees</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>log out</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QStackedWidget" name="AdminChoice_stackWidget">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>120</y>
+       <width>931</width>
+       <height>571</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="choiceAdminPage">
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>130</y>
+         <width>321</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>choode what </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>40</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="viewTransactionsPage">
+      <widget class="QScrollArea" name="scrolltrans">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>811</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style for user card */
+#userCard {
+    background-color: #f8f9fa;  /* Light gray background */
+    border: 2px solid #7ec1c1;   /* Light greenish-blue border */
+    border-radius: 12px;         /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px;          /* Space between user cards */
+}
+
+/* Style for user information label */
+#userInfoLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5f308f;  /* Purple text */
+    margin-bottom: 10px;
+}
+
+/* Style for separator line between users */
+QFrame[frameShape=&quot;HLine&quot;] {
+    border: none;
+    height: 2px;
+    background-color: #7ec1c1;  /* Light greenish-blue */
+    margin: 10px 0;
+}
+
+/* Style for user transaction history (if exists) */
+QWidget {
+    background-color: #eeeeee;  /* Light background for transaction history */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Style for scroll area to make it visually neat */
+QScrollArea {
+    background-color: #ffffff;
+    border: none;
+}
+
+/* Add padding around the scroll area content */
+QWidget#contentWidget {
+    padding: 10px;
+}
+
+/* Apply to the label for transaction data */
+QLabel {
+    font-size: 12px;
+    color: #5f308f;
+}
+
+/* Add hover effect on user cards (optional) */
+#userCard:hover {
+    background-color: #f1f1f1;  /* Lighten the background on hover */
+    border: 2px solid #5f308f;   /* Darken the border on hover */
+}
+</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>761</width>
+          <height>431</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="deletUserPage">
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>100</y>
+         <width>231</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+
+font: 700 18pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>UserName</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="deleteUser_line">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>200</y>
+         <width>361</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_16">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>400</y>
+         <width>211</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelPhoto3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="addUserPage">
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>20</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 700 13pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>UserName</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>110</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 700 13pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>password</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>210</y>
+         <width>231</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 700 13pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="AdminADDuser_line">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>70</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="passwordAdduser_line">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>180</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::EchoMode::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Email_Adduser_line">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>270</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>460</y>
+         <width>221</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelPhoto2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="userradio">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>350</y>
+         <width>131</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(126, 189, 189);
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 9px;
+    background-color: white;
+}
+
+QRadioButton::indicator:checked {
+    background-color: rgb(100, 150, 150);
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: white;
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton:hover {
+    background-color: rgb(150, 220, 220);
+}
+
+QRadioButton:pressed {
+    background-color: rgb(100, 160, 160);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>User</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="donationRadio">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>350</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(126, 189, 189);
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 9px;
+    background-color: white;
+}
+
+QRadioButton::indicator:checked {
+    background-color: rgb(100, 150, 150);
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: white;
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton:hover {
+    background-color: rgb(150, 220, 220);
+}
+
+QRadioButton:pressed {
+    background-color: rgb(100, 160, 160);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Donation</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="viewUsersPage">
+      <widget class="QScrollArea" name="scrollusers">
+       <property name="geometry">
+        <rect>
+         <x>49</x>
+         <y>34</y>
+         <width>781</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style for user card */
+#userCard {
+    background-color: #f8f9fa;  /* Light gray background */
+    border: 2px solid #7ec1c1;   /* Light greenish-blue border */
+    border-radius: 12px;         /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px;          /* Space between user cards */
+}
+
+/* Style for user information label */
+#userInfoLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5f308f;  /* Purple text */
+    margin-bottom: 10px;
+}
+
+/* Style for separator line between users */
+QFrame[frameShape=&quot;HLine&quot;] {
+    border: none;
+    height: 2px;
+    background-color: #7ec1c1;  /* Light greenish-blue */
+    margin: 10px 0;
+}
+
+/* Style for user transaction history (if exists) */
+QWidget {
+    background-color: #eeeeee;  /* Light background for transaction history */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Style for scroll area to make it visually neat */
+QScrollArea {
+    background-color: #ffffff;
+    border: none;
+}
+
+/* Add padding around the scroll area content */
+QWidget#contentWidget {
+    padding: 10px;
+}
+
+/* Apply to the label for transaction data */
+QLabel {
+    font-size: 12px;
+    color: #5f308f;
+}
+
+/* Add hover effect on user cards (optional) */
+#userCard:hover {
+    background-color: #f1f1f1;  /* Lighten the background on hover */
+    border: 2px solid #5f308f;   /* Darken the border on hover */
+}
+</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>731</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QScrollArea {
+    border: 2px solid rgb(126, 189, 189);
+    background-color: #f0fdfd;
+    border-radius: 8px;
+}
+
+QScrollArea QWidget {
+    background-color: #ffffff;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #e3f7f7;
+    width: 10px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: rgb(126, 189, 189);
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgb(106, 169, 169);
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="setFeesPage">
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>150</y>
+         <width>221</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 700 13pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>new highFees Rate</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>260</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 700 13pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string> new LowFees Rate</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonforSetfees">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>440</y>
+         <width>101</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="highCombo">
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>160</y>
+         <width>121</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+    background-color: #f0fdfd;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+QPushButton {
+    background-color: rgb(126, 189, 189);
+    color: white;
+    border: 2px solid rgb(95, 48, 143);
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(106, 169, 169);
+}
+
+QPushButton:pressed {
+    background-color: rgb(86, 149, 149);
+}
+
+QLineEdit {
+    border: 1px solid rgb(126, 189, 189);
+    border-radius: 6px;
+    padding: 5px;
+    background-color: white;
+    color: #333;
+    selection-background-color: rgb(126, 189, 189);
+    selection-color: white;
+}
+
+QComboBox {
+    background-color: white;
+    border: 2px solid rgb(126, 189, 189);
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #2e2e2e;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: 1px solid rgb(126, 189, 189);
+    background-color: rgb(220, 248, 248);
+}
+
+QLabel {
+    color: #2e2e2e;
+}
+
+QStackedWidget {
+    background-color: #f7fafa;
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>0.01</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.02</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.03</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.04</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.05</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.06</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.07</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.08</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.09</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="lowCombo">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>270</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+    background-color: #f0fdfd;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+QPushButton {
+    background-color: rgb(126, 189, 189);
+    color: white;
+    border: 2px solid rgb(95, 48, 143);
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(106, 169, 169);
+}
+
+QPushButton:pressed {
+    background-color: rgb(86, 149, 149);
+}
+
+QLineEdit {
+    border: 1px solid rgb(126, 189, 189);
+    border-radius: 6px;
+    padding: 5px;
+    background-color: white;
+    color: #333;
+    selection-background-color: rgb(126, 189, 189);
+    selection-color: white;
+}
+
+QComboBox {
+    background-color: white;
+    border: 2px solid rgb(126, 189, 189);
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #2e2e2e;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: 1px solid rgb(126, 189, 189);
+    background-color: rgb(220, 248, 248);
+}
+
+QLabel {
+    color: #2e2e2e;
+}
+
+QStackedWidget {
+    background-color: #f7fafa;
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>0.06</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.07</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.08</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.09</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0.4</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="feesphoto">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="editUserrPage">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>261</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>change Password</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>modify balance</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>set susspended</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>Reactivate </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+background-color: rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;
+border-radius: 40px;
+border:3px solid white;</string>
+        </property>
+        <property name="text">
+         <string>back</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QStackedWidget" name="EditUser_stackWidget">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>60</y>
+       <width>931</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgb(255, 255, 255)</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="reactivatePage">
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>160</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 13pt &quot;Segoe UI&quot;;
+font: 700 15pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>UserName</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="reactivate_Line">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>160</y>
+         <width>341</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="reactivateButton">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>350</y>
+         <width>141</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+       </property>
+       <property name="text">
+        <string>reactivate</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="chooseEdit">
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>50</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="ModifyPage">
+      <widget class="QPushButton" name="ModifyButton">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>480</y>
+         <width>201</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+       </property>
+       <property name="text">
+        <string>save</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="Add_Radio">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>300</y>
+         <width>141</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(126, 189, 189);
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 9px;
+    background-color: white;
+}
+
+QRadioButton::indicator:checked {
+    background-color: rgb(100, 150, 150);
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: white;
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton:hover {
+    background-color: rgb(150, 220, 220);
+}
+
+QRadioButton:pressed {
+    background-color: rgb(100, 160, 160);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="withdraw_Radio">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>380</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(126, 189, 189);
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(100, 150, 150);
+    border-radius: 9px;
+    background-color: white;
+}
+
+QRadioButton::indicator:checked {
+    background-color: rgb(100, 150, 150);
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: white;
+    border: 2px solid rgb(100, 150, 150);
+}
+
+QRadioButton:hover {
+    background-color: rgb(150, 220, 220);
+}
+
+QRadioButton:pressed {
+    background-color: rgb(100, 160, 160);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>WithDraw</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>10</y>
+         <width>184</width>
+         <height>59</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 13pt &quot;Segoe UI&quot;;
+font: 700 15pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>userName</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ineditUser_line">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>68</y>
+         <width>371</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>150</y>
+         <width>160</width>
+         <height>59</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 700 15pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Amount</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="amount_line">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>204</y>
+         <width>371</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelPhoto2_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="changepassPage">
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>120</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 13pt &quot;Segoe UI&quot;;
+font: 700 15pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>userName</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>200</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 13pt &quot;Segoe UI&quot;;
+font: 700 15pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>new Password</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="NewuserPass_line">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>100</y>
+         <width>341</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newPass_line">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>200</y>
+         <width>341</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>400</y>
+         <width>151</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+       </property>
+       <property name="text">
+        <string>save</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="photoset">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Set_susspendedPage">
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>160</y>
+         <width>191</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(126, 189, 189);
+font: 13pt &quot;Segoe UI&quot;;
+font: 700 15pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>UserName</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="susspendLine">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>170</y>
+         <width>341</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #8E2DE2; border-radius: 6px; 
+    padding: 5px;
+    background-color: white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="susspendButton">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>390</y>
+         <width>141</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 rgb(95, 48, 143),
+        stop: 1 #D8A0E0
+    );
+    color: white;
+    font: 700 15pt &quot;Segoe UI&quot;;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="SETsuusphOTO">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>301</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
